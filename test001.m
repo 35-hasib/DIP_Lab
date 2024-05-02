@@ -11,5 +11,4 @@ for i = 1:8
 end
 figure
 imshow(a);
-
-histoeq(a);
+mo(a);

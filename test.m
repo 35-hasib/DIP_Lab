@@ -1,10 +1,10 @@
 clc; close all; clear all;
-a = imread('a.png');
+a = imread('b.jpg');
 a = imresize(a,[300,600]);
 figure
 imshow(a);
-a = graypic(a);xx
+a = graypic(a);
 figure
 imshow(a);
 
-histoeq(a);
+bps(a);
