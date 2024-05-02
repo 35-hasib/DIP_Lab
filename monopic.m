@@ -1,4 +1,4 @@
-function m = monopic(gim)
+function f = monopic(gim)
     [k,l] = size(gim);
     for i = 1:k
         for j = 1:l
@@ -9,5 +9,5 @@ function m = monopic(gim)
             end
         end
     end
-    m = b;
+    f = b;
 end
