@@ -1,4 +1,4 @@
-function h = histo(im)
+function f = histo(im)
     h = zeros(1,256);
     [x,y,z] = size(im);
     if(z==3)
@@ -10,4 +10,5 @@ function h = histo(im)
             h(im(i,j)+1) = h(im(i,j)+1)+1;
         end
     end
+    f = h;
 end

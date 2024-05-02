@@ -1,9 +1,9 @@
 function f = bps(a)
-    [w,h] = size(a);
-    c = zeros(w,h);
+    [w,h,l] = size(a);
+    c = zeros(w,h,l);
     a = double(a);
     for i = 1:8
-       b = mo(a);          %% b = a - floor(a/2)*2;
+       b = mo(a,2);          %% b = a - floor(a/2)*2;
        a = (a-b)/2;        %% a = floor(a/2);
        
        figure

@@ -1,19 +1,18 @@
-function f = mo(a)
-    [w,h] = size(a);
+function f = mo(a,x)
+    [w,h,l] = size(a);
     a = double(a);
     for i = 1:w
         for j = 1:h
-            v = a(i,j);
-            while true
-                if v == 1
-                    break;
+            for k = 1:l
+                v = a(i,j,k);
+                while true
+                    if v < x
+                        break;
+                    end
+                    v = v - x;
                 end
-                if v == 0
-                    break;
-                end
-                v = v - 2;
+                b(i,j,k) = v;
             end
-            b(i,j) = v;
         end
     end
     f = b;

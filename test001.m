@@ -11,4 +11,4 @@ for i = 1:8
 end
 figure
 imshow(a);
-mo(a);
+mo(a,2);
