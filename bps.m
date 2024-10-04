@@ -4,7 +4,7 @@ function f = bps(a)
     a = double(a);
     for i = 1:8
        b = mo(a,2);          %% b = a - floor(a/2)*2;
-       a = (a-b)/2;        %% a = floor(a/2);
+       a = (a-b)/2;          %% a = floor(a/2);
        
        figure
        imshow(b);
