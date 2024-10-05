@@ -9,6 +9,8 @@ for i = 1:8
       end
    end
 end
+
+
+a = zs(a,50);
 figure
 imshow(a);
-mo(a,2);
