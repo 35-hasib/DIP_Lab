@@ -1,6 +1,12 @@
 clc; close all; clear all;
-a = imread('aa.jpg');
-a = imresize(a,[300,600]);
+a = imread('bb.jpg');
+a = imresize(a,[300,300]);
 figure
 imshow(a);
-bps(a,8)
+
+m = [1,1,1; %%For smoth       %% m = [-1,-1,-1; For sharp
+     1,1,1;                   %%      -1,9,-1;
+     1,1,1];                  %%      -1,-1,-1];
+
+figure
+imshow(smooth_sharp(a,m));
