@@ -1,8 +1,12 @@
-function f = monopic(gim)
-    [k,l] = size(gim);
-    for i = 1:k
-        for j = 1:l
-            if(gim(i,j)>128)
+function f = monopic(im)
+    [x,y,z] = size(im);
+    if z > 1
+        im = graypic(im);
+    end
+
+    for i = 1:x
+        for j = 1:y
+            if(im(i,j) > 128)
                 b(i,j) = 1;
             else
                 b(i,j) = 0;

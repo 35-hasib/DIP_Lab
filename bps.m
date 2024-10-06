@@ -8,6 +8,7 @@ function bps(a,bit)
        a = (a-b)/2;          %% a = floor(a/2);
        figure
        imshow(b);
+       title(['slice No : ' num2str(i)])
        
        s(:,:,:,i) = b;
     end

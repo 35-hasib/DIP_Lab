@@ -1,8 +1,7 @@
-clc; close all; clear all;
-a = imread('bb.jpg');
+clc; close all;
+a = imread('aaa.jpg');
 a = imresize(a,[300,300]);
 figure
 imshow(a);
 
-
-logt(a)
+bps(a,8)

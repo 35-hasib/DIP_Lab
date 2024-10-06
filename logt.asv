@@ -1,9 +1,0 @@
-function logt(im)
-    im = double(im)/255;
-    c = 1;
-    
-    im = c * im.^gamma;
-    
-    figure
-    imshow(im)
-end
