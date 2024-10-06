@@ -1,7 +1,8 @@
 clc; close all;
-a = imread('aa.jpg');
-a = imresize(a,[300,300]);
+a = imread('b.jpg');
+
 figure
 imshow(a);
 
-bps(a,8)
+figure
+imshow(smooth_sharp(a))

@@ -1,8 +1,8 @@
 function f = smooth_sharp(im)
     [x,y,z] = size(im);
-    %w_matrix = [1,1,1;1,1,1;1,1,1];         %for smooth
+    w_matrix = [1,1,1;1,1,1;1,1,1];         %for smooth
     %w_matrix = [-1,-1,-1;-1,9,-1;-1,-1,-1]; %for sharp
-    w_matrix = [0,-1,0;-1,5,-1;0,-1,0];     %for sharp
+    %w_matrix = [0,-1,0;-1,5,-1;0,-1,0];     %for sharp
     
     [a,b] = size(w_matrix);
     totalweight = 0;
