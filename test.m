@@ -5,6 +5,4 @@ figure
 imshow(a);
 
 
-
-figure
-imshow(smooth_sharp(a));
+logt(a)
